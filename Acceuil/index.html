@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Savoie Chambéry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <!-- lien vers le css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Header -->
+        
+        <!-- logo -->
+    <header>
+        <a href="#" class="logo"><img src="../Img/Quai-Antique.jpg" alt="logo du restaurant Quai Antique"></a>
+
+        <!-- Menu de navigation -->
+
+       <nav class="navbar">
+        <a href="#" class="active">Acceuil</a>
+        <a href="#">Menu</a>
+        <a href="#">Réservation</a>
+        <a href="#">Connexion</a>
+       </nav>
+
+       <div class="icons">
+        <i class="fas fa-bars" id="menu"></i>
+       </div>
+
+    </header>
+
+    <!-- Galerie d'images -->
+
+    <div class="home" id="home">
+        <div class="swiper homeSlider">
+            <div class="swiper-warpper warpper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="#" alt="#">
+                        <h3>Ipsum latum</h3>
+                        <h1>Ipsum latum</h1>
+                        <p>ispum latum</p>
+                        <a href="#" class="btn">Réserver</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="#" alt="#">
+                        <h3>RACLETTE</h3>
+                        <h1>Plat savoyard</h1>
+                        <p>Venez goûter ce plat typique de la Savoie</p>
+                        <a href="#" class="btn">Réserver</a>
+                    </div>
+                </div>    
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                            <img src="#" alt="#">
+                            <h3>RACLETTE</h3>
+                            <h1>Plat savoyard</h1>
+                            <p>Venez goûter ce plat typique de la Savoie</p>
+                            <a href="#" class="btn">Réserver</a>
+                    </div>
+                </div>        
+                        
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+   
+  
+  <!-- Automatisation de la galerie -->
+   <script>
+    var swiper = new Swiper(".homeSlider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+    }); 
+  </script> 
+    
+    <script type="text/javascript">
+    
+    // apparition bouton menu déroulant
+
+    let menu = document.querySelector('#menu');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+}
+    </script>
+</body>
+</html>
