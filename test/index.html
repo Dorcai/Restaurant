@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu du restaurant</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+        
+        <!-- logo -->
+        <header>
+            <a href="#" class="logo"><img src="../Img/Quai-Antique.jpg" alt="logo du restaurant Quai Antique"></a>
+    
+            <!-- Menu de navigation -->
+    
+           <nav class="navbar">
+            <a href="#" class="active">Acceuil</a>
+            <a href="#">Menu</a>
+            <a href="#">Réservation</a>
+            <a href="#">Connexion</a>
+           </nav>
+    
+           <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+           </div>
+    
+        </header>
+    <section class="our-menu">
+    <h1>Menu du restaurant</h1>
+    <div class="container">
+      <div class="menu-wrapper">
+        <div class="market-menu">
+          <h2>Menu du midi 20€</h2>
+          <ul>
+            <li>
+              <span class="item-title"> Entrée du jour + Plat du jour + Dessert du jour</span>
+              
+            </li>
+          </ul>
+        </div>
+        <div class="market-menu">
+            <h2>Menu du soir 40€</h2>
+            <ul>
+              <li>
+                <span class="item-title"> Entrée carte + Plat carte + Dessert carte</span>
+                
+              </li>
+            </ul>
+          </div>
+        <div class="normal-menu">
+          <h2>Menu à la carte</h2>
+          <h3>Entrée</h3>
+          <ul>
+            <li>
+              <span class="item-title">Entrée 1</span>
+              <span class="item-price">10€</span>
+            </li>
+            <li>
+              <span class="item-title">Plat 1</span>
+              <span class="item-price">20€</span>
+            </li>
+            <li>
+              <span class="item-title">Dessert 1</span>
+              <span class="item-price">8€</span>
+            </li></ul>
+            <h3>Entrée</h3>
+            <ul>
+            <li>
+              <span class="item-title">Entrée 2</span>
+              <span class="item-price">12€</span>
+            </li>
+            <li>
+              <span class="item-title">Plat 2</span>
+              <span class="item-price">24€</span>
+            </li>
+            <li>
+              <span class="item-title">Dessert 2</span>
+              <span class="item-price">10€</span>
+            </li></ul>
+            <h3>Entrée</h3>
+            <ul><li>
+              <span class="item-title">Entrée 3</span>
+              <span class="item-price">8€</span>
+            </li>
+            <li>
+              <span class="item-title">Plat 3</span>
+              <span class="item-price">18€</span>
+            </li>
+            <li>
+              <span class="item-title">Dessert 3</span>
+              <span class="item-price">6€</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    
+    // apparition bouton menu déroulant
+
+    let menu = document.querySelector('#menu');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+}
+    </script>
+  </body>
+</html>
